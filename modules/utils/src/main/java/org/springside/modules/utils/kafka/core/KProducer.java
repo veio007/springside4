@@ -1,13 +1,14 @@
 package org.springside.modules.utils.kafka.core;
 
-import com.gexin.kafka.utils.AutoRun;
-import com.gexin.kafka.utils.MsgCounter;
-import com.gexin.kafka.utils.Util;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.kafka.clients.producer.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springside.modules.utils.kafka.utils.AutoRun;
+import org.springside.modules.utils.kafka.utils.MsgCounter;
+import org.springside.modules.utils.kafka.utils.Util;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -37,7 +38,7 @@ public class KProducer extends AbstractBase {
 		Properties newProps = new Properties();
 		newProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
 		newProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
-		newProps.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "com.gexin.kafka.core.SimplePartition");
+		newProps.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "org.springside.modules.utils.kafka.core.SimplePartition");
 		newProps.put(ProducerConfig.RETRIES_CONFIG, 3);
 		newProps.put(ProducerConfig.COMPRESSION_TYPE_CONFIG, "gzip");
 		newProps.put(ProducerConfig.CLIENT_ID_CONFIG, getClientId());

@@ -1,8 +1,8 @@
 package org.springside.modules.utils.kafka.example;
 
 import com.alibaba.fastjson.JSONObject;
-import com.gexin.kafka.core.IKConsumerAction;
-import com.gexin.kafka.core.KConsumer;
+import org.springside.modules.utils.kafka.core.IKConsumerAction;
+import org.springside.modules.utils.kafka.core.KConsumer;
 
 public class consumer {
 	public static void main(String[] args) throws InterruptedException {

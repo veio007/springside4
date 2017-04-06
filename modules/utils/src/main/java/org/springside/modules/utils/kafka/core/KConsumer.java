@@ -1,8 +1,5 @@
 package org.springside.modules.utils.kafka.core;
 
-import com.gexin.kafka.utils.AutoRun;
-import com.gexin.kafka.utils.MsgCounter;
-import com.gexin.kafka.utils.Util;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -10,6 +7,9 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springside.modules.utils.kafka.utils.AutoRun;
+import org.springside.modules.utils.kafka.utils.MsgCounter;
+import org.springside.modules.utils.kafka.utils.Util;
 
 import java.util.Collections;
 import java.util.Properties;

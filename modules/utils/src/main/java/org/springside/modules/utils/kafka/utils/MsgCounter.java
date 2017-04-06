@@ -1,6 +1,7 @@
 package org.springside.modules.utils.kafka.utils;
 
-import com.gexin.kafka.bean.MsgCountBean;
+
+import org.springside.modules.utils.kafka.bean.MsgCountBean;
 
 import java.util.HashMap;
 import java.util.Map;

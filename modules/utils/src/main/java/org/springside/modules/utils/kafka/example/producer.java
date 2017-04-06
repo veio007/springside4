@@ -1,7 +1,7 @@
 package org.springside.modules.utils.kafka.example;
 
 import com.alibaba.fastjson.JSONObject;
-import com.gexin.kafka.core.KProducer;
+import org.springside.modules.utils.kafka.core.KProducer;
 
 public class producer {
 	public static void main(String[] args) throws InterruptedException {

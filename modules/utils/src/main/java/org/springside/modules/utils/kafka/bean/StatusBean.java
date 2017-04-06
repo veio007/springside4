@@ -1,9 +1,9 @@
 package org.springside.modules.utils.kafka.bean;
 
-import com.gexin.kafka.utils.MsgCounter;
 import org.softee.management.annotation.Description;
 import org.softee.management.annotation.MBean;
 import org.softee.management.annotation.ManagedAttribute;
+import org.springside.modules.utils.kafka.utils.MsgCounter;
 
 import java.util.Map;
 
