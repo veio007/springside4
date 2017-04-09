@@ -12,5 +12,6 @@
 		<module>utils</module>
 		<module>core</module>
 		<module>metrics</module>
+		<module>dbtest</module>
 	</modules>
 </project>
