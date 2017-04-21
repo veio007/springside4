@@ -14,9 +14,10 @@ public class RemoteDateUtil {
 	 * @return 远程时间服务器当前时间戳
 	 */
 	public static long getTime() {
+		long start = System.currentTimeMillis();
 		try {
 			NTPUDPClient timeClient = new NTPUDPClient();
-			String timeServerUrl = "cn.ntp.org.cn";
+			String timeServerUrl = "cn.ntp.org.cn";//asia.pool.ntp.org
 			InetAddress timeServerAddress = InetAddress.getByName(timeServerUrl);
 			TimeInfo timeInfo = timeClient.getTime(timeServerAddress);
 			TimeStamp timeStamp = timeInfo.getMessage().getTransmitTimeStamp();
@@ -24,6 +25,8 @@ public class RemoteDateUtil {
 			return timeStamp.getTime();
 		} catch (Throwable e) {
 			throw new RuntimeException("get time from timeserver error", e);
+		} finally {
+			System.out.println(System.currentTimeMillis() - start);
 		}
 	}
 }
